@@ -1,11 +1,17 @@
 ﻿namespace Ducks;
+using System.Diagnostics.CodeAnalysis;
 
 public abstract class Duck
 {
     public required IFlyBehavior FlyBehavior { get; set; }
     public required IQuackBehavior QuackBehavior { get; set; }
 
-    public Duck() { }
+    [SetsRequiredMembers]
+    public Duck(IFlyBehavior flyBehavior, IQuackBehavior quackBehavior)
+    {
+        FlyBehavior = flyBehavior;
+        QuackBehavior = quackBehavior;
+    }
 
     public void PerformFly() => FlyBehavior.Fly();
 
