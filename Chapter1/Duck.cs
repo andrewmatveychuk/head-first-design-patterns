@@ -1,21 +1,17 @@
 ﻿namespace Ducks;
 
-class Duck
+public abstract class Duck
 {
-    IFlyBehavior? flyBehavior;
-    IQuackBehavior? quackBehavior;
+    public required IFlyBehavior FlyBehavior { get; set; }
+    public required IQuackBehavior QuackBehavior { get; set; }
 
     public Duck() { }
 
-    public void PerformFly () {
-        flyBehavior.Fly();
-    }
+    public void PerformFly() => FlyBehavior.Fly();
 
-    public void PerformQuack() {
-        quackBehavior.Quack();
-    }
+    public void PerformQuack() => QuackBehavior.Quack();
 
-    public void Swim() {
-        System.Console.WriteLine("All ducks float.");
-    }
+    public void Swim() => Console.WriteLine("All ducks float.");
+
+    public virtual void Display() => Console.WriteLine("I'm a duck.");
 }
