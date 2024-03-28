@@ -1,11 +1,12 @@
+
 namespace WeatherStation;
 
 public class ForecastDisplay : IObserver, IDisplayElement
 {
     private float previousPressure;
     private float currentPressure;
-    private readonly WeatherData weatherData;
-
+    private readonly WeatherData? weatherData;
+    public ForecastDisplay() { }
     public ForecastDisplay(WeatherData weatherData)
     {
         this.weatherData = weatherData;
@@ -29,8 +30,25 @@ public class ForecastDisplay : IObserver, IDisplayElement
 
     public void Update()
     {
-        previousPressure = currentPressure;
-        currentPressure = weatherData.Pressure;
-        Display();
+        if (weatherData is not null)
+        {
+            previousPressure = currentPressure;
+            currentPressure = weatherData.Pressure;
+            Display();
+        }
+    }
+
+    public void OnWeatherChange(object? sender, EventArgs e)
+    {
+        if (sender is not null)
+        {
+            WeatherData? data = sender as WeatherData;
+            if (data is not null)
+            {
+                previousPressure = currentPressure;
+                currentPressure = data.Pressure;
+                Display();
+            }
+        }
     }
 }

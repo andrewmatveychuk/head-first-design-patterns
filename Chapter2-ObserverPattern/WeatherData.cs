@@ -27,5 +27,11 @@ public class WeatherData : ISubject
         Humidity = humidity;
         Pressure = pressure;
         MeasurementsChanged();
+
+        // Sending events if something is listening
+        WeatherChange?.Invoke(this, EventArgs.Empty);
     }
+
+    // Alternative implementation using events
+    public event EventHandler? WeatherChange;
 }
