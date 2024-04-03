@@ -5,6 +5,15 @@
 		},
 		{
 			"path": "Chapter2-ObserverPattern"
+		},
+		{
+			"path": "Chapter3-DecoratorPattern"
 		}
-	]
+	],
+	"settings": {
+		"cSpell.words": [
+			"Starbuzz",
+			"VENTI"
+		]
+	}
 }
