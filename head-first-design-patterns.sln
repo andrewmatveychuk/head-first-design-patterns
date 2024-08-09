@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter3-DecoratorPattern",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4-FactoryPattern", "Chapter4-FactoryPattern\Chapter4-FactoryPattern.csproj", "{A4192A62-5264-418B-BDBD-6942AC905BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5-SingletonPattern", "Chapter5-SingletonPattern\Chapter5-SingletonPattern.csproj", "{7461DE5C-A5A6-4A0E-BB49-89B3BEFE887E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter6-CommandPattern", "Chapter6-CommandPattern\Chapter6-CommandPattern.csproj", "{166CF29C-6D1B-4BCE-814D-857447BEF234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{A4192A62-5264-418B-BDBD-6942AC905BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4192A62-5264-418B-BDBD-6942AC905BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4192A62-5264-418B-BDBD-6942AC905BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7461DE5C-A5A6-4A0E-BB49-89B3BEFE887E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7461DE5C-A5A6-4A0E-BB49-89B3BEFE887E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7461DE5C-A5A6-4A0E-BB49-89B3BEFE887E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7461DE5C-A5A6-4A0E-BB49-89B3BEFE887E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166CF29C-6D1B-4BCE-814D-857447BEF234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166CF29C-6D1B-4BCE-814D-857447BEF234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166CF29C-6D1B-4BCE-814D-857447BEF234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166CF29C-6D1B-4BCE-814D-857447BEF234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
