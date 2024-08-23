@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter8-TemplateMethodPatt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter9-IteratorPattern", "Chapter9-IteratorPattern\Chapter9-IteratorPattern.csproj", "{2F057D2E-3B9A-450D-BE48-3B2E5F5A83D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter10-StatePattern", "Chapter10-StatePattern\Chapter10-StatePattern.csproj", "{2AF4D09C-CB3D-4814-8567-44A7F5A4E7D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{2F057D2E-3B9A-450D-BE48-3B2E5F5A83D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F057D2E-3B9A-450D-BE48-3B2E5F5A83D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F057D2E-3B9A-450D-BE48-3B2E5F5A83D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF4D09C-CB3D-4814-8567-44A7F5A4E7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF4D09C-CB3D-4814-8567-44A7F5A4E7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF4D09C-CB3D-4814-8567-44A7F5A4E7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF4D09C-CB3D-4814-8567-44A7F5A4E7D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
