@@ -2,27 +2,15 @@ namespace ObjectvilleCafe;
 
 public class Waitress
 {
-    public List<IMenu> Menus { get; }
+    MenuComponent AllMenus { get; }
 
-    public Waitress(List<IMenu> menus)
+    public Waitress(MenuComponent allMenus)
     {
-        this.Menus = menus;
+        this.AllMenus = allMenus;
     }
 
     public void PrintMenu()
     {
-        System.Console.WriteLine("==== Breakfast Menu ====");
-        foreach (var menu in Menus)
-        {
-            foreach (var item in menu)
-            {
-                PrintMenuItem(item);
-            }
-        }
-    }
-
-    private void PrintMenuItem(MenuItem item)
-    {
-        System.Console.WriteLine($"{item.Name}, {item.Price}");
+        AllMenus.Print();
     }
 }
