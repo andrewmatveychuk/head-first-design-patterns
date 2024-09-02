@@ -8,6 +8,7 @@ public class GumballMachine
     internal IGumballMachineState NoQuarterState { get; }
     internal IGumballMachineState SoldOutState { get; }
     internal IGumballMachineState SoldState { get; }
+    internal IGumballMachineState WinnerState { get; }
 
     internal IGumballMachineState State { get; set; }
     internal int CountOfGumballs { get; set; } = 0;
@@ -18,6 +19,7 @@ public class GumballMachine
         this.NoQuarterState = new NoQuarterState(this);
         this.HasQuarterState = new HasQuarterState(this);
         this.SoldState = new SoldState(this);
+        this.WinnerState = new WinnerState(this);
 
         this.CountOfGumballs = numberOfGumballs;
         if (this.CountOfGumballs > 0)

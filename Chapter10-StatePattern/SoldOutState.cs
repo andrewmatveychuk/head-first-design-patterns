@@ -1,6 +1,6 @@
 namespace GumballMachineWithState;
 
-public class SoldOutState : IGumballMachineState
+internal class SoldOutState : IGumballMachineState
 {
     private GumballMachine gumballMachine;
 

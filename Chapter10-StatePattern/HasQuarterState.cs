@@ -1,8 +1,9 @@
 namespace GumballMachineWithState;
 
-public class HasQuarterState : IGumballMachineState
+internal class HasQuarterState : IGumballMachineState
 {
     private GumballMachine gumballMachine;
+    private Random randomWinner = Random.Shared;
 
     public HasQuarterState(GumballMachine gumballMachine)
     {
@@ -23,7 +24,15 @@ public class HasQuarterState : IGumballMachineState
     public void TurnCrank()
     {
         System.Console.WriteLine("You turned...");
-        this.gumballMachine.State = this.gumballMachine.SoldState;
+        int winner = this.randomWinner.Next(10);
+        if (winner == 0 && this.gumballMachine.CountOfGumballs > 1)
+        {
+            this.gumballMachine.State = this.gumballMachine.WinnerState;
+        }
+        else
+        {
+            this.gumballMachine.State = this.gumballMachine.SoldState;
+        }
     }
 
     public void Dispense()

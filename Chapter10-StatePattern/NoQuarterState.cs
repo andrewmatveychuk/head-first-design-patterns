@@ -1,6 +1,6 @@
 namespace GumballMachineWithState;
 
-public class NoQuarterState : IGumballMachineState
+internal class NoQuarterState : IGumballMachineState
 {
     private GumballMachine gumballMachine;
 
