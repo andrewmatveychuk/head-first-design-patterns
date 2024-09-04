@@ -2,7 +2,7 @@ namespace GumballMachineWithState;
 
 internal class NoQuarterState : IGumballMachineState
 {
-    private GumballMachine gumballMachine;
+    private readonly GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine)
     {

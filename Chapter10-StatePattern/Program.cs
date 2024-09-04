@@ -1,6 +1,6 @@
 ﻿using GumballMachineWithState;
 
-GumballMachine gumballMachine = new GumballMachine(5);
+GumballMachine gumballMachine = new(5, "Brooklyn");
 
 System.Console.WriteLine(gumballMachine);
 

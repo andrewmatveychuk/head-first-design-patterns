@@ -2,7 +2,7 @@ namespace GumballMachineWithState;
 
 public class WinnerState : IGumballMachineState
 {
-    private GumballMachine gumballMachine;
+    private readonly GumballMachine gumballMachine;
 
     public WinnerState(GumballMachine gumballMachine)
     {

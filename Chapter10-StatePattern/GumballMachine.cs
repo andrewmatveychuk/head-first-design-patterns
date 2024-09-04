@@ -4,17 +4,19 @@ namespace GumballMachineWithState;
 
 public class GumballMachine
 {
-    internal IGumballMachineState HasQuarterState { get; }
-    internal IGumballMachineState NoQuarterState { get; }
-    internal IGumballMachineState SoldOutState { get; }
-    internal IGumballMachineState SoldState { get; }
-    internal IGumballMachineState WinnerState { get; }
+    public IGumballMachineState HasQuarterState { get; }
+    public IGumballMachineState NoQuarterState { get; }
+    public IGumballMachineState SoldOutState { get; }
+    public IGumballMachineState SoldState { get; }
+    public IGumballMachineState WinnerState { get; }
 
-    internal IGumballMachineState State { get; set; }
-    internal int CountOfGumballs { get; set; } = 0;
+    public IGumballMachineState State { get; internal set; }
+    public int CountOfGumballs { get; private set; } = 0;
+    public string Location { get; }
 
-    public GumballMachine(int numberOfGumballs)
+    public GumballMachine(int numberOfGumballs, string location)
     {
+        this.Location = location;
         this.SoldOutState = new SoldOutState(this);
         this.NoQuarterState = new NoQuarterState(this);
         this.HasQuarterState = new HasQuarterState(this);

@@ -2,7 +2,7 @@ namespace GumballMachineWithState;
 
 internal class SoldOutState : IGumballMachineState
 {
-    private GumballMachine gumballMachine;
+    private readonly GumballMachine gumballMachine;
 
     public SoldOutState(GumballMachine gumballMachine)
     {

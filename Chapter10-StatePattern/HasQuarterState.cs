@@ -2,8 +2,8 @@ namespace GumballMachineWithState;
 
 internal class HasQuarterState : IGumballMachineState
 {
-    private GumballMachine gumballMachine;
-    private Random randomWinner = Random.Shared;
+    private readonly GumballMachine gumballMachine;
+    private readonly Random randomWinner = Random.Shared;
 
     public HasQuarterState(GumballMachine gumballMachine)
     {
